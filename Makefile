@@ -1,4 +1,4 @@
-OBJS = Object.o test.o Int.o
+OBJS = Object.o test.o Int.o Char.o
 TARGET = test
 CC ?= tcc
 AR ?= ar
