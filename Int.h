@@ -5,15 +5,15 @@
 #include "ObjectP.h"
 
 typedef struct _Int* Int;
-typedef Int (*Op)(Int self, Int other);
+typedef Int (*IntOp)(Int self, Int other);
 typedef struct _Int {
     _Object super;
 
     int n;
-    Op plus;
-    Op minus;
-    Op multi;
-    Op div;
+    IntOp plus;
+    IntOp minus;
+    IntOp multi;
+    IntOp div;
 } _Int;
 
 Int Int_new(int n);
